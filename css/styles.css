@@ -520,7 +520,8 @@ img {
 }
 
 .subscribe-form {
-  margin-left: 80px;
+  display: flex;
+  gap: 24px;
 }
 
 .email-form {
@@ -541,7 +542,8 @@ img {
   border-radius: 4px;
   border: 1px solid #fff;
   width: 264px;
-  background-color: #2e2f42;
+  height: 40px;
+  background-color: transparent;
   padding: 8px 0 8px 16px;
 }
 
