@@ -548,15 +548,17 @@ img {
   height: 40px;
   background-color: transparent;
   padding: 8px 0 8px 16px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: #fff;
 }
 
 input::placeholder {
   color: #fff;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 2;
-  letter-spacing: 0.04em;
 }
 
 .button-subscribe {
