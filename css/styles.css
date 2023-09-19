@@ -565,7 +565,7 @@ input::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+
   margin-left: 24px;
   padding: 8px 24px;
   text-align: center;
@@ -574,6 +574,14 @@ input::placeholder {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.social-icon-input {
+  fill: #ffffff;
+  margin-left: 16px;
 }
 /* END footer */
 
