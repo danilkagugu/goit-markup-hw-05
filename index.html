@@ -459,7 +459,66 @@
             </li>
           </ul>
         </div>
+        <form class="subscribe-form" name="subscribe">
+          <h2 class="modal-title">Subscribe</h2>
+          <div class="email-form">
+            <label for="email-subcribe"></label>
+            <input class="email-input" type="email" placeholder="E-mail" />
+            <button type="button" class="button-subscribe">
+              Subscribe
+              <svg class="social-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+    <!-- START MODAL -->
+    <div class="backdrop visually-hidden">
+      <div class="modal">
+        <form name="contact-form">
+          <fieldset>
+            <legend>Leave your contacts and we will call you back</legend>
+
+            <div>
+              <label for="name">Name</label>
+              <input id="name" type="text" name="user-name" />
+            </div>
+
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" type="tel" name="user-phone" />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input id="email" type="email" name="user-email" />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="visually-hidden">Comment</legend>
+
+            <div>
+              <label for="comment">Comment</label>
+              <textarea
+                name="user-comment"
+                id="comment"
+                placeholder="Text input"
+              ></textarea>
+            </div>
+
+            <div>
+              <label for="privacy-policy"></label>
+              <input id="privacy-policy" type="checkbox" />
+              <p>I accept the terms and conditions of the Privacy Policy</p>
+            </div>
+          </fieldset>
+        </form>
+        <button type="button">Send</button>
+      </div>
+    </div>
+
+    <!-- END MODAL -->
   </body>
 </html>

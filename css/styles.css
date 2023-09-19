@@ -519,4 +519,74 @@ img {
   fill: #f4f4fd;
 }
 
+.subscribe-form {
+  margin-left: 80px;
+}
+
+.email-form {
+  display: flex;
+}
+
+.modal-title {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.email-input {
+  border-radius: 4px;
+  border: 1px solid #fff;
+  width: 264px;
+  background-color: #2e2f42;
+  padding: 8px 0 8px 16px;
+}
+
+input::placeholder {
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
+
+.button-subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-left: 24px;
+  padding: 8px 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
 /* END footer */
+
+/* START MODAL */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.is-hidden {
+  display: none;
+}
+
+.modal {
+  border-radius: 10px;
+  padding: 72px 24px 24px;
+  background-color: #fff;
+}
+/* END MODAL */
