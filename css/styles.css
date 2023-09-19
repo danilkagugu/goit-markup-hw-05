@@ -519,6 +519,9 @@ img {
   fill: #f4f4fd;
 }
 
+.footer-input {
+  margin-left: 80px;
+}
 .subscribe-form {
   display: flex;
   gap: 24px;
