@@ -524,7 +524,6 @@ img {
 }
 .subscribe-form {
   display: flex;
-  gap: 24px;
 }
 
 .email-form {
