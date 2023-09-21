@@ -665,6 +665,7 @@ input::placeholder {
 }
 
 .modal-title {
+  text-align: center;
   margin-bottom: 16px;
   color: #2e2f42;
   font-size: 16px;
