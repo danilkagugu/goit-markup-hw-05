@@ -531,7 +531,7 @@ img {
   display: flex;
 }
 
-.modal-title {
+.modal-title-footer {
   color: #fff;
   font-size: 16px;
   font-style: normal;
@@ -599,6 +599,8 @@ input::placeholder {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-open {
@@ -608,18 +610,22 @@ input::placeholder {
 }
 
 .modal {
+  width: 408px;
   max-width: 100%;
-  width: 410px;
-  max-height: 584px;
-  height: 100%;
+  min-height: 584px;
+  max-height: 100%;
   overflow-y: auto;
   background-color: #fcfcfc;
   border-radius: 4px;
-  position: relative;
-  top: 24px;
-  left: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
   padding: 72px 24px 24px;
   border-radius: 4px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close {
@@ -656,6 +662,15 @@ input::placeholder {
 
 .button-close:focus .icon-close {
   fill: #fff;
+}
+
+.modal-title {
+  margin-bottom: 16px;
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .modal-field {
@@ -695,6 +710,8 @@ input::placeholder {
   height: 40px;
   width: 100%;
   padding: 8px 38px;
+  background-color: transparent;
+  outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -702,6 +719,10 @@ input::placeholder {
 .modal-input:focus {
   outline: none;
   border-color: #4d5ae5;
+}
+
+.modal-field-textarea {
+  margin-bottom: 16px;
 }
 
 .modal-textarea {
@@ -716,6 +737,7 @@ input::placeholder {
   line-height: 1.17;
   letter-spacing: 0.04em;
   background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea:hover,
@@ -730,6 +752,7 @@ input::placeholder {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+  outline: transparent;
 }
 
 .modal-checkbox {
@@ -737,11 +760,11 @@ input::placeholder {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-top: 8px;
+  margin-bottom: 24px;
 }
 
 .modal-checkbox-check {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   border: 1px solid rgba(46, 47, 66, 0.4);
