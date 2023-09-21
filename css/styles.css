@@ -783,8 +783,10 @@ input::placeholder {
   border: none;
 }
 
-.modal-checkbox-input:checked + .modal-checkbox-label,
-.modal-checkbox-check .modal-checkbox-icon {
+.modal-checkbox-input:checked
+  + .modal-checkbox-label
+  > .modal-checkbox-check
+  .modal-checkbox-icon {
   fill: #f4f4fd;
 }
 
