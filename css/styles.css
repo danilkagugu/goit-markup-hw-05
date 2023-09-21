@@ -777,12 +777,12 @@ input::placeholder {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-checkbox-input:checked .modal-checkbox-check {
+.modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-check {
   background-color: #404bbf;
   border: none;
 }
 
-.modal-checkbox-input:checked .modal-checkbox-check .modal-checkbox-icon {
+.modal-checkbox-input:checked + .modal-checkbox-label .modal-checkbox-icon {
   fill: #f4f4fd;
 }
 
